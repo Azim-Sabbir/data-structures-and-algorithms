@@ -4,6 +4,30 @@ require __DIR__ . '/vendor/autoload.php';
 
 use DataStructuresAndAlgorithms\LinkedList\LinkedList;
 
-$linkList = new LinkedList();
-$linkList->add(5)->add(4)->add(3)->add(2)->add(1);
-print_r($linkList);
+
+// $list = new LinkedList();
+// $list->insert(10)
+//     ->insert(20)
+//     ->insert(30)
+//     ->insert(40)
+//     ->insert(50)
+//     ->insert(60)
+//     ->insert(70)
+//     ->insert(80)
+//     ->insertAt(2, 100)
+//     ->deleteFromBeg()
+//     ->deleteAtLast();
+
+$list = new LinkedList();
+$list->insert(10)
+    ->insert(20)
+    ->insert(30)
+    ->insert(40)
+    ->insert(50)
+    ->insert(60)
+    ->insert(70)
+    ->insert(80)
+    ->insertAt(2, 100)
+    ->reverse();
+
+print_r($list);
